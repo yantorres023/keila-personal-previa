@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keila Bernardo — Personal Trainer em Coronel Fabriciano/MG</title>
+<meta name="description" content="Keila Bernardo, personal trainer (CREF 061099). Musculação com método, técnica e acompanhamento na Academia Via Prime, em Coronel Fabriciano/MG, e consultoria online.">
+<meta name="theme-color" content="#0E0E0F">
+<!-- TROCAR NÚMERO: o número do WhatsApp fica numa única constante (WA_NUMBER), no final deste arquivo. Formato: 55 + DDD + número, só dígitos. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0E0E0F; --bg2:#151516; --bg3:#1c1c1e; --line:#2b2b2e;
+  --fg:#F2EFEA; --mut:#A9A59E; --acc:#FF6A1A; --acc-ink:#0E0E0F;
+  --gutter:clamp(16px,4vw,48px); --max:1240px; --r:16px;
+  --display:'Anton','Bebas Neue',Impact,'Arial Narrow',sans-serif;
+  --body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3,h4,p,ul,ol,figure,blockquote,fieldset{margin:0;padding:0}
+ul,ol{list-style:none}
+fieldset{border:0;min-width:0}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+::selection{background:var(--acc);color:var(--acc-ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;left:16px;top:-80px;z-index:200;background:var(--acc);color:var(--acc-ink);padding:10px 16px;border-radius:8px;font-weight:700;text-decoration:none}
+.skip:focus{top:12px}
+
+/* grain */
+.grain{position:fixed;inset:-50%;width:200%;height:200%;z-index:80;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .7 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+@media (prefers-reduced-motion:no-preference){.grain{animation:grain 1.2s steps(6) infinite}}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-4%)}60%{transform:translate(-2%,3%)}80%{transform:translate(4%,1%)}100%{transform:translate(0,0)}}
+
+/* layout helpers */
+.wrap{width:100%;max-width:calc(var(--max) + var(--gutter)*2);margin-inline:auto;padding-inline:var(--gutter)}
+section{position:relative;scroll-margin-top:72px}
+.sec{padding-block:clamp(72px,11vw,150px)}
+.eyebrow{display:flex;align-items:center;gap:12px;font:700 12px/1 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin-bottom:22px}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--acc)}
+.h2{font:400 clamp(44px,8.2vw,116px)/.94 var(--display);text-transform:uppercase;letter-spacing:.005em}
+.h2 em{font-style:normal;color:var(--acc)}
+.ln{display:block;overflow:hidden;padding-top:.14em;margin-top:-.14em;padding-bottom:.04em}
+.ln>span{display:block;will-change:transform}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--mut);max-width:58ch}
+.lead strong{color:var(--fg);font-weight:600}
+
+/* buttons */
+.btn{--bx:0px;--by:0px;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:16px 26px;min-height:52px;border-radius:6px;
+  font:800 14px/1.25 var(--body);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid var(--acc);background:var(--acc);color:var(--acc-ink);
+  overflow:hidden;isolation:isolate;transition:color .3s,border-color .3s;text-align:center}
+.btn::before{content:"";position:absolute;inset:0;background:var(--fg);transform:translateY(101%);transition:transform .35s cubic-bezier(.2,.8,.2,1);z-index:-1}
+.btn:hover::before,.btn:focus-visible::before{transform:translateY(0)}
+.btn:hover{border-color:var(--fg)}
+.btn svg{width:18px;height:18px;flex:none;transition:transform .3s}
+.btn:hover svg{transform:translateX(4px)}
+.btn.ghost{background:transparent;color:var(--fg);border-color:#4a4a4e}
+.btn.ghost::before{background:var(--acc)}
+.btn.ghost:hover{color:var(--acc-ink);border-color:var(--acc)}
+.btn.sm{padding:11px 18px;min-height:44px;font-size:12px}
+.btn.block{width:100%}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(14,14,15,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 22px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.logo b{display:grid;place-items:center;width:36px;height:36px;background:var(--acc);color:var(--acc-ink);font-weight:400;border-radius:4px;transform:skewX(-8deg)}
+.nav-links{display:flex;align-items:center;gap:clamp(14px,2vw,30px)}
+.nav-links a:not(.btn){font:600 13px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--mut);padding:10px 2px;position:relative;transition:color .2s}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--acc);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav-links a:not(.btn):hover,.nav-links a.on{color:var(--fg)}
+.nav-links a:not(.btn):hover::after,.nav-links a.on::after{transform:scaleX(1)}
+.menu-btn{display:none;width:48px;height:48px;border:1px solid var(--line);background:transparent;border-radius:8px;position:relative}
+.menu-btn i{position:absolute;left:13px;right:13px;height:2px;background:var(--fg);transition:transform .3s,opacity .3s}
+.menu-btn i:nth-child(1){top:18px}.menu-btn i:nth-child(2){top:23px}.menu-btn i:nth-child(3){top:28px}
+.menu-btn[aria-expanded="true"] i:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] i:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] i:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+@media (max-width:1080px){
+  .menu-btn{display:block}
+  .nav-links{position:fixed;inset:68px 0 0 0;background:var(--bg);flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding:12px var(--gutter) 32px;overflow-y:auto;
+    transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s}
+  .nav-links.open{opacity:1;transform:none;visibility:visible}
+  .nav-links a:not(.btn){font:400 38px/1 var(--display);letter-spacing:.02em;color:var(--fg);padding:18px 0;border-bottom:1px solid var(--line)}
+  .nav-links a:not(.btn)::after{display:none}
+  .nav-links .btn{margin-top:24px}
+}
+
+/* hero */
+.hero{min-height:100svh;padding-top:110px;padding-bottom:40px;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-12vw;top:8%;width:60vw;height:60vw;max-width:760px;max-height:760px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,106,26,.22),rgba(255,106,26,0) 62%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;font:700 12px/1.3 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-bottom:18px;flex-wrap:wrap}
+.hero-tag b{color:var(--acc-ink);background:var(--acc);padding:6px 10px;border-radius:3px;letter-spacing:.14em}
+h1.name{font:400 21vw/.88 var(--display);text-transform:uppercase;letter-spacing:-.005em;position:relative;z-index:2}
+h1.name .ln:nth-child(2){color:transparent;-webkit-text-stroke:2px var(--fg)}
+.hero-lede{font:600 clamp(19px,2.2vw,26px)/1.35 var(--body);max-width:30ch;margin:26px 0 8px}
+.hero-lede em{font-style:normal;color:var(--acc)}
+.hero-sub{color:var(--mut);max-width:48ch;margin-bottom:30px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.hero-photo{position:relative;z-index:1;justify-self:end;width:min(100%,460px);margin-inline:auto}
+.ph{position:relative;overflow:hidden;border-radius:var(--r);background:
+  radial-gradient(120% 80% at 70% 15%,rgba(255,106,26,.35),transparent 55%),
+  repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 2px,transparent 2px 14px),
+  linear-gradient(165deg,#2a2521,#141414 70%);border:1px solid var(--line)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(14,14,15,.7));pointer-events:none}
+.ph .sil{position:absolute;left:50%;bottom:-3%;width:78%;transform:translateX(-50%);color:#2f2a26;filter:drop-shadow(0 0 40px rgba(255,106,26,.12))}
+.ph figcaption,.ph .cap{position:absolute;left:14px;bottom:12px;z-index:2;font:600 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--mut);display:flex;align-items:center;gap:8px}
+.ph figcaption::before,.ph .cap::before{content:"";width:8px;height:8px;border-radius:50%;border:1.5px solid var(--acc)}
+.hero-photo .ph{aspect-ratio:4/5}
+.float-chip{position:absolute;z-index:3;background:rgba(21,21,22,.92);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font:700 12px/1.25 var(--body);letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.float-chip small{display:block;color:var(--mut);font-weight:500;letter-spacing:.04em;text-transform:none;font-size:12px;margin-top:2px}
+.float-chip.a{left:-6px;top:12%}
+.float-chip.b{right:-6px;bottom:16%;border-color:var(--acc)}
+.float-chip i{color:var(--acc);font-style:normal}
+@media (min-width:900px){
+  .hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr);gap:0}
+  h1.name{font-size:clamp(120px,12.6vw,210px);margin-right:-18%}
+  .hero-photo{margin-right:0}
+  .float-chip.a{left:-48px}
+  .float-chip.b{right:-10px}
+}
+@media (max-width:899px){.hero{padding-top:96px}.float-chip.a{left:8px}.float-chip.b{right:8px}h1.name .ln:nth-child(2){-webkit-text-stroke-width:1.5px}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);background:var(--bg2);overflow:hidden;padding-block:clamp(14px,2vw,22px)}
+.mq-skew{display:block}
+.mq-track{display:flex;width:max-content}
+@media (prefers-reduced-motion:no-preference){.mq-track{animation:mq 32s linear infinite}}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mq-group{display:flex;align-items:center;flex:none}
+.mq-group span{font:400 clamp(40px,7vw,92px)/1 var(--display);text-transform:uppercase;letter-spacing:.02em;padding-inline:clamp(16px,2.4vw,34px);white-space:nowrap}
+.mq-group span.o{color:transparent;-webkit-text-stroke:1.5px var(--fg)}
+.mq-group i{display:block;width:clamp(12px,1.6vw,20px);height:clamp(12px,1.6vw,20px);background:var(--acc);transform:rotate(45deg);flex:none}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.stat{background:var(--bg);padding:clamp(22px,3.4vw,44px) clamp(16px,2.4vw,32px)}
+.stat .n{font:400 clamp(52px,8vw,112px)/.95 var(--display);color:var(--fg);font-variant-numeric:tabular-nums}
+.stat .n sup,.stat .n small{font-size:.45em;color:var(--acc);vertical-align:baseline;position:relative;top:-.05em}
+.stat p{color:var(--mut);font-size:15px;line-height:1.4;margin-top:10px;max-width:24ch}
+@media (min-width:900px){.stats{grid-template-columns:repeat(4,1fr)}}
+
+/* why (horizontal pin) */
+.why{background:var(--bg)}
+.why-head{margin-bottom:clamp(28px,4vw,56px)}
+.why-track{display:grid;grid-template-columns:1fr;gap:16px}
+.why-card{position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,3vw,34px);display:flex;flex-direction:column;gap:14px;min-height:240px;transition:border-color .3s,transform .3s}
+.why-card:hover{border-color:var(--acc)}
+.why-card .no{font:400 clamp(72px,8vw,120px)/.85 var(--display);color:transparent;-webkit-text-stroke:1.5px #5a5a5e;transition:color .3s,-webkit-text-stroke-color .3s}
+.why-card:hover .no{color:var(--acc);-webkit-text-stroke-color:var(--acc)}
+.why-card h3{font:400 clamp(28px,3vw,38px)/1 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.why-card p{color:var(--mut);font-size:16px}
+.why-intro{display:none}
+.why-progress{display:none}
+@media (min-width:640px) and (max-width:899px){.why-track{grid-template-columns:1fr 1fr}}
+@media (min-width:900px) and (prefers-reduced-motion:reduce){.why-track{grid-template-columns:repeat(3,1fr)}}
+.why.is-h{padding:0}
+.why.is-h .why-pin{height:100vh;height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-top:68px}
+.why.is-h .why-head{display:none}
+.why.is-h .why-track{display:flex;gap:22px;width:max-content;padding-inline:var(--gutter);align-items:center}
+.why.is-h .why-intro .h2{font-size:clamp(44px,5.4vw,88px)}
+.why.is-h .why-intro{display:flex;flex-direction:column;justify-content:center;flex:none;width:min(560px,44vw);padding-right:24px}
+.why.is-h .why-intro .lead{margin-top:22px}
+.why.is-h .why-card{flex:none;width:min(380px,30vw);height:min(480px,66vh);justify-content:flex-start;overflow:hidden}
+.why.is-h .why-card h3{margin-top:auto}
+.why.is-h .why-progress{display:block;position:absolute;left:var(--gutter);right:var(--gutter);bottom:28px;height:3px;background:var(--line);border-radius:3px;overflow:hidden}
+.why.is-h .why-progress i{display:block;height:100%;background:var(--acc);transform:scaleX(0);transform-origin:left}
+.why-hint{display:none}
+.why.is-h .why-hint{display:flex;align-items:center;gap:10px;margin-top:26px;font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.why.is-h .why-hint svg{width:18px;height:18px;color:var(--acc)}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr;gap:clamp(36px,6vw,80px);align-items:center}
+.about-photo{position:relative;max-width:480px;width:100%}
+.about-photo .ph{aspect-ratio:4/5}
+.seal{position:absolute;right:-4px;bottom:-26px;width:clamp(140px,20vw,190px);aspect-ratio:1;z-index:3}
+.seal svg{width:100%;height:100%;overflow:visible}
+.seal .spin{transform-origin:50% 50%}
+@media (prefers-reduced-motion:no-preference){.seal .spin{animation:spin 24s linear infinite}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.about-copy .lead+.lead{margin-top:16px}
+.facts{display:grid;grid-template-columns:1fr;gap:12px;margin-top:30px}
+.fact{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid var(--line)}
+.fact:last-child{border-bottom:1px solid var(--line)}
+.fact b{font:400 26px/1 var(--display);color:var(--acc);min-width:64px;letter-spacing:.02em}
+.fact span{color:var(--mut);font-size:16px}
+.fact span strong{color:var(--fg);font-weight:600}
+.hl{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.hl a{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font:600 13px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;transition:border-color .2s,background .2s}
+.hl a:hover{border-color:var(--acc);background:rgba(255,106,26,.08)}
+.hl a::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc)}
+@media (min-width:900px){.about-grid{grid-template-columns:.85fr 1fr}.seal{right:-14px}}
+
+/* steps */
+.steps-head{display:flex;flex-direction:column;gap:20px;margin-bottom:clamp(36px,5vw,64px)}
+.steps{display:grid;grid-template-columns:1fr;gap:0;counter-reset:s}
+.step{position:relative;padding:28px 0 28px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:6px 22px}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step .sn{grid-row:span 2;font:400 clamp(56px,9vw,104px)/.9 var(--display);color:var(--acc);min-width:1.4em}
+.step h3{font:400 clamp(28px,3.4vw,44px)/1 var(--display);text-transform:uppercase;letter-spacing:.01em;align-self:end}
+.step p{color:var(--mut);max-width:52ch}
+@media (min-width:900px){
+  .steps{grid-template-columns:repeat(4,1fr);gap:20px}
+  .step{display:block;border:1px solid var(--line);border-radius:var(--r);padding:28px 24px 32px;background:var(--bg2);overflow:hidden;transition:border-color .3s}
+  .step:last-child{border-bottom:1px solid var(--line)}
+  .step:hover{border-color:var(--acc)}
+  .step .sn{display:block;margin-bottom:46px}
+  .step h3{margin-bottom:12px}
+  .step:not(:last-child)::after{content:"";position:absolute;top:60px;right:-21px;width:22px;height:2px;background:var(--acc);z-index:2}
+}
+
+/* plans */
+.plans{display:grid;grid-template-columns:1fr;gap:20px;margin-top:clamp(32px,5vw,60px)}
+.plan{position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3.4vw,40px);display:flex;flex-direction:column;gap:20px}
+.plan.hot{border-color:var(--acc);background:linear-gradient(180deg,rgba(255,106,26,.09),var(--bg2) 55%)}
+.plan .tag{align-self:flex-start;font:700 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;padding:7px 10px;border-radius:3px;background:var(--acc);color:var(--acc-ink)}
+.plan .tag.o{background:transparent;border:1px solid #4a4a4e;color:var(--mut)}
+.plan h3{font:400 clamp(34px,4.4vw,56px)/1 var(--display);text-transform:uppercase}
+.plan .price{display:flex;align-items:baseline;gap:10px;font:400 44px/1 var(--display);color:var(--fg)}
+.plan .price small{font:500 13px/1.3 var(--body);color:var(--mut);letter-spacing:0;text-transform:none}
+.plan ul{display:grid;gap:12px;color:var(--mut);font-size:16px}
+.plan li{display:flex;gap:12px}
+.plan li::before{content:"";flex:none;width:10px;height:10px;margin-top:8px;background:var(--acc);transform:rotate(45deg)}
+.plan .btn{margin-top:auto}
+.ph-note{font:600 12px/1.4 var(--body);color:var(--acc);letter-spacing:.04em}
+@media (min-width:800px){.plans{grid-template-columns:1fr 1fr}}
+
+/* tools */
+.tools-head{display:grid;gap:22px;margin-bottom:clamp(32px,5vw,60px)}
+.tools{display:grid;grid-template-columns:1fr;gap:20px}
+.tool{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,3vw,36px);min-width:0;position:relative}
+.tool-h{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.tool-n{font:400 15px/1 var(--display);letter-spacing:.1em;color:var(--acc-ink);background:var(--acc);width:34px;height:34px;display:grid;place-items:center;border-radius:4px;flex:none}
+.tool-h h3{font:400 clamp(26px,3vw,36px)/1 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.opts{margin-bottom:20px}
+.opts legend{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-bottom:12px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;display:inline-flex}
+.chip input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer;width:100%;height:100%}
+.chip span{display:inline-flex;align-items:center;justify-content:center;min-height:46px;min-width:46px;padding:10px 18px;border:1px solid #3d3d41;border-radius:8px;font:600 15px/1 var(--body);transition:background .2s,color .2s,border-color .2s;background:var(--bg)}
+.chip:hover span{border-color:var(--acc)}
+.chip input:checked+span{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.chip input:focus-visible+span{outline:3px solid var(--fg);outline-offset:2px}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:16px}
+.wd{border:1px solid var(--line);border-radius:8px;padding:8px 0 10px;text-align:center;background:var(--bg);transition:background .3s,border-color .3s}
+.wd small{display:block;font:600 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.wd b{display:block;font:400 22px/1 var(--display);color:#55555a;min-height:22px}
+.wd.on{background:rgba(255,106,26,.14);border-color:var(--acc)}
+.wd.on b{color:var(--acc)}
+.split-name{font:400 clamp(30px,4vw,46px)/1 var(--display);text-transform:uppercase;margin-bottom:14px}
+.split-name em{font-style:normal;color:var(--acc)}
+.days{display:grid;gap:8px;margin-bottom:16px}
+.day{display:grid;grid-template-columns:44px 1fr;gap:6px 14px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.day>b{grid-row:span 2;display:grid;place-items:center;width:44px;height:44px;border-radius:6px;background:var(--bg3);font:400 20px/1 var(--display);color:var(--acc)}
+.day h4{font:700 14px/1.2 var(--body);letter-spacing:.04em;text-transform:uppercase}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font:500 13px/1 var(--body);color:var(--mut);padding:5px 9px;border:1px solid var(--line);border-radius:999px}
+.note{color:var(--mut);font-size:14.5px;margin-bottom:16px;padding-left:14px;border-left:2px solid var(--acc)}
+.rest-link{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px dashed #4a4a4e;border-radius:8px;padding:10px 14px;font:600 13px/1.2 var(--body);margin-bottom:18px;color:var(--fg);transition:border-color .2s}
+.rest-link:hover{border-color:var(--acc)}
+.rest-link b{color:var(--acc)}
+
+/* timer */
+.timer-stage{display:grid;place-items:center;margin-bottom:20px}
+.ring{position:relative;width:min(100%,280px);aspect-ratio:1}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .tr{fill:none;stroke:#2a2a2d;stroke-width:10}
+.ring .pr{fill:none;stroke:var(--acc);stroke-width:10;stroke-linecap:round}
+.ring .read{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.ring .read b{font:400 clamp(64px,9vw,88px)/1 var(--display);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.ring .read span{font:700 11px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-top:6px}
+.ring.done .pr{stroke:var(--fg)}
+.ring.done .read b{color:var(--acc)}
+@media (prefers-reduced-motion:no-preference){.ring.done{animation:pulse .6s ease 3}}
+@keyframes pulse{50%{transform:scale(1.04)}}
+.t-actions{display:grid;grid-template-columns:2fr 1fr;gap:10px;margin:18px 0}
+.switches{display:flex;flex-wrap:wrap;gap:8px 22px}
+.sw{display:inline-flex;align-items:center;gap:10px;font:500 14px/1.2 var(--body);color:var(--mut);cursor:pointer;min-height:44px}
+.sw input{appearance:none;-webkit-appearance:none;width:44px;height:26px;border-radius:999px;background:#2f2f33;position:relative;margin:0;cursor:pointer;transition:background .2s;flex:none}
+.sw input::after{content:"";position:absolute;left:3px;top:3px;width:20px;height:20px;border-radius:50%;background:var(--fg);transition:transform .2s}
+.sw input:checked{background:var(--acc)}
+.sw input:checked::after{transform:translateX(18px);background:var(--acc-ink)}
+.sw input:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+
+/* protein */
+.field{display:grid;gap:8px;margin-bottom:20px}
+.field label,.field .lbl{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.num{display:flex;align-items:center;border:1px solid #3d3d41;border-radius:8px;background:var(--bg);overflow:hidden;max-width:240px}
+.num:focus-within{border-color:var(--acc);outline:3px solid rgba(255,106,26,.35)}
+.num input{flex:1;min-width:0;width:100%;background:transparent;border:0;color:var(--fg);font:400 34px/1 var(--display);padding:12px 14px;outline:none;letter-spacing:.02em}
+.num span{padding-right:16px;color:var(--mut);font-weight:600}
+.p-out{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:16px}
+.p-big{font:400 clamp(44px,6vw,64px)/1 var(--display);color:var(--fg);font-variant-numeric:tabular-nums}
+.p-big small{font:600 15px/1 var(--body);color:var(--mut);letter-spacing:.06em}
+.p-sub{color:var(--mut);font-size:15px;margin-top:6px}
+.p-bar{position:relative;height:10px;border-radius:6px;background:#2a2a2d;margin:18px 0 8px}
+.p-bar i{position:absolute;top:0;bottom:0;border-radius:6px;background:var(--acc);transition:left .5s,width .5s}
+.p-scale{display:flex;justify-content:space-between;font:500 11px/1 var(--body);color:var(--mut)}
+.warn{font-size:13.5px;color:var(--mut);display:flex;gap:10px;align-items:flex-start}
+.warn::before{content:"!";flex:none;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--acc);color:var(--acc-ink);font-weight:800;font-size:13px}
+
+/* body map */
+.bm{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
+.bm-fig{display:flex;flex-direction:column;align-items:center;gap:14px}
+.seg{display:inline-flex;border:1px solid #3d3d41;border-radius:8px;overflow:hidden}
+.seg button{background:transparent;border:0;padding:11px 20px;min-height:44px;font:700 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+.bm svg{width:min(100%,210px);height:auto;overflow:visible}
+.bm svg g[hidden]{display:none}
+.bm .base{fill:#1d1d20;stroke:#2f2f33;stroke-width:1.5}
+.bm .z{fill:rgba(255,255,255,.07);stroke:#4b4b50;stroke-width:1.5;cursor:pointer;transition:fill .2s,stroke .2s}
+.bm .z:hover{fill:rgba(255,106,26,.35);stroke:var(--acc)}
+.bm .z.on{fill:var(--acc);stroke:var(--acc)}
+.bm .z:focus-visible{outline:none;stroke:var(--fg);stroke-width:3}
+.bm-info h4{font:400 clamp(34px,4vw,48px)/1 var(--display);text-transform:uppercase;color:var(--acc);margin-bottom:6px}
+.bm-info p.s{color:var(--mut);font-size:15px;margin-bottom:16px}
+.bm-info ul{display:grid;gap:8px;margin-bottom:20px}
+.bm-info li{display:flex;gap:12px;align-items:center;padding:12px 14px;background:var(--bg);border:1px solid var(--line);border-radius:10px;font-weight:500}
+.bm-info li::before{content:"";flex:none;width:8px;height:8px;background:var(--acc);transform:rotate(45deg)}
+.bm-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.bm-chips button{background:transparent;border:1px solid #3d3d41;border-radius:999px;padding:9px 14px;min-height:40px;font:600 13px/1 var(--body);color:var(--mut);transition:all .2s}
+.bm-chips button:hover{border-color:var(--acc);color:var(--fg)}
+.bm-chips button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+@media (min-width:520px){.bm{grid-template-columns:230px 1fr}}
+@media (min-width:900px){
+  .tools{grid-template-columns:repeat(12,1fr)}
+  .tool.t1{grid-column:span 7}.tool.t2{grid-column:span 5}.tool.t3{grid-column:span 5}.tool.t4{grid-column:span 7}
+}
+
+/* results */
+.res-head{display:grid;gap:20px;margin-bottom:clamp(32px,5vw,56px)}
+.ba-grid{display:grid;grid-template-columns:1fr;gap:24px}
+.ba-fig figcaption{margin-top:12px;font-size:14px;color:var(--mut)}
+.ba-fig figcaption b{color:var(--acc);font-weight:700}
+.ba{--pos:50%;position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);user-select:none;-webkit-user-select:none;background:var(--bg2)}
+.ba:focus-within{outline:3px solid var(--acc);outline-offset:3px}
+.ba-l{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px}
+.ba-l.after{background:radial-gradient(100% 70% at 70% 20%,rgba(255,106,26,.5),transparent 60%),repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,transparent 2px 14px),linear-gradient(165deg,#3a2c22,#161413)}
+.ba-l.after{justify-items:end;text-align:right;padding-right:clamp(16px,6%,32px)}
+.ba-l.before{justify-items:start;text-align:left;padding-left:clamp(16px,6%,32px);background:repeating-linear-gradient(135deg,rgba(255,255,255,.03) 0 2px,transparent 2px 14px),linear-gradient(165deg,#2b2b2d,#171718);clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba-l small{display:block;font:600 12px/1.4 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-top:12px;max-width:14ch}
+.ba-l .big{font:400 clamp(44px,6vw,64px)/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.ba-l.after .big{color:var(--acc)}
+.ba-l.before .big{color:var(--fg)}
+.ba-tag{position:absolute;top:14px;font:700 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;padding:7px 10px;border-radius:3px;background:rgba(14,14,15,.8);z-index:2}
+.ba-tag.l{left:14px}.ba-tag.r{right:14px;background:var(--acc);color:var(--acc-ink)}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:var(--acc);z-index:3;pointer-events:none}
+.ba-knob{position:absolute;top:50%;left:var(--pos);width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:var(--acc);color:var(--acc-ink);display:grid;place-items:center;z-index:4;pointer-events:none;box-shadow:0 6px 24px rgba(0,0,0,.5)}
+.ba-knob svg{width:24px;height:24px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:5;touch-action:pan-y;-webkit-appearance:none;appearance:none}
+@media (min-width:700px){.ba-grid{grid-template-columns:1fr 1fr;max-width:900px}}
+.testi{display:grid;grid-template-columns:1fr;gap:16px;margin-top:clamp(40px,6vw,80px)}
+.tcard{background:var(--bg2);border:1px dashed #4a4a4e;border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:18px}
+.tcard::before{content:"“";font:400 80px/.6 var(--display);color:var(--acc);height:34px}
+.tcard p{font:500 18px/1.5 var(--body)}
+.tcard cite{font:600 12px/1.4 var(--body);font-style:normal;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-top:auto}
+@media (min-width:800px){.testi{grid-template-columns:repeat(3,1fr)}}
+.res-note{margin-top:28px;color:var(--mut);font-size:15px}
+.res-note a{color:var(--fg);text-decoration-color:var(--acc);text-underline-offset:4px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:1fr;gap:clamp(32px,5vw,72px)}
+.faq-list{border-top:1px solid var(--line)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);padding:24px 0;font:600 clamp(18px,2vw,22px)/1.3 var(--body);transition:color .2s}
+.faq-q:hover{color:var(--acc)}
+.faq-q i{flex:none;position:relative;width:32px;height:32px;border:1px solid #4a4a4e;border-radius:50%;transition:background .3s,border-color .3s,transform .3s}
+.faq-q i::before,.faq-q i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--fg);transform:translate(-50%,-50%);transition:transform .3s,background .3s}
+.faq-q i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq-q[aria-expanded="true"] i{background:var(--acc);border-color:var(--acc)}
+.faq-q[aria-expanded="true"] i::before,.faq-q[aria-expanded="true"] i::after{background:var(--acc-ink)}
+.faq-q[aria-expanded="true"] i::after{transform:translate(-50%,-50%) rotate(0)}
+.faq-a{display:grid;grid-template-rows:0fr;visibility:hidden;transition:grid-template-rows .4s cubic-bezier(.2,.8,.2,1),visibility .4s}
+.faq-a.open{grid-template-rows:1fr;visibility:visible}
+.faq-a>div{overflow:hidden}
+.faq-a p{padding:0 0 24px;color:var(--mut);max-width:62ch}
+.faq-a p strong{color:var(--fg)}
+@media (min-width:900px){.faq-grid{grid-template-columns:.7fr 1.3fr}.faq-side{position:sticky;top:110px;align-self:start}}
+
+/* footer */
+.foot{background:var(--bg2);border-top:1px solid var(--line);padding-top:clamp(64px,9vw,120px);overflow:hidden}
+.foot-cta{font:400 clamp(56px,13vw,190px)/.9 var(--display);text-transform:uppercase;margin-bottom:34px}
+.foot-cta em{font-style:normal;color:var(--acc)}
+.foot-cols{display:grid;grid-template-columns:1fr;gap:34px;padding-block:clamp(40px,6vw,72px);border-top:1px solid var(--line);margin-top:clamp(40px,6vw,72px)}
+.foot h4{font:700 12px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:16px}
+.foot address{font-style:normal;color:var(--mut);line-height:1.6}
+.foot address strong{color:var(--fg);display:block;font-size:18px;margin-bottom:4px}
+.foot a.lnk{display:inline-flex;align-items:center;gap:10px;color:var(--fg);text-decoration:underline;text-decoration-color:var(--acc);text-underline-offset:5px;min-height:44px}
+.foot a.lnk svg{width:20px;height:20px;color:var(--acc)}
+.foot .cref{display:inline-block;margin-top:6px;padding:10px 14px;border:1px solid var(--acc);border-radius:6px;font:700 14px/1 var(--body);letter-spacing:.1em}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-block:22px 110px;border-top:1px solid var(--line);color:var(--mut);font-size:13.5px}
+@media (min-width:800px){.foot-cols{grid-template-columns:1.2fr 1fr 1fr}.foot-bottom{padding-bottom:40px}}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:60;display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 20px 0 16px;border-radius:999px;background:var(--acc);color:var(--acc-ink);text-decoration:none;font:800 13px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;box-shadow:0 10px 34px rgba(255,106,26,.35),0 2px 0 rgba(0,0,0,.4);transition:transform .25s,background .25s}
+.wa-float:hover{transform:translateY(-3px);background:var(--fg)}
+.wa-float svg{width:26px;height:26px}
+@media (max-width:520px){.wa-float{width:56px;padding:0;justify-content:center}.wa-float span{display:none}}
+@media (prefers-reduced-motion:no-preference){.wa-float::after{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid var(--acc);animation:ping 2.4s ease-out infinite;pointer-events:none}}
+@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.5);opacity:0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.800-1.700A12.900 12.900 0 0 0 16 29c7.200 0 13-5.800 13-13S23.200 3 16 3Zm0 23.600c-1.900 0-3.800-.5-5.400-1.500l-.4-.2-4 1 1.100-3.900-.3-.4A10.500 10.500 0 0 1 5.500 16C5.500 10.200 10.200 5.500 16 5.500S26.500 10.200 26.500 16 21.800 26.600 16 26.600Zm5.800-7.800c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200s-.8 1-1 1.200c-.2.200-.4.200-.7.100-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.140-.7l.5-.5c.1-.2.2-.3.300-.5.100-.2 0-.4 0-.5-.1-.2-.7-1.700-1-2.300-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100c.2.200 2.200 3.400 5.300 4.700 3.100 1.300 3.100.9 3.700.8.600-.1 1.900-.8 2.100-1.500.3-.7.3-1.400.2-1.500-.1-.1-.3-.2-.6-.4Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.200 7-12a7 7 0 0 0-14 0c0 5.800 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.600" fill="currentColor"/></symbol>
+    <symbol id="i-drag" viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></symbol>
+    <symbol id="sil" viewBox="0 0 200 260"><path fill="currentColor" d="M100 8c-17 0-28 13-28 30 0 11 5 20 12 26-30 6-52 20-58 48l-12 90c-1 8 5 14 12 14h20l6 44h96l6-44h20c7 0 13-6 12-14l-12-90c-6-28-28-42-58-48 7-6 12-15 12-26 0-17-11-30-28-30Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#inicio" aria-label="Keila Bernardo, início"><b>KB</b><span>Keila Bernardo</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu"><i></i><i></i><i></i></button>
+    <nav class="nav-links" id="navLinks" aria-label="Principal">
+      <a href="#por-que">Por que um personal</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#como">Como funciona</a>
+      <a href="#planos">Planos</a>
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#faq">Dúvidas</a>
+      <a class="btn sm magnetic js-wa" href="https://wa.me/55XXXXXXXXXXX" data-wa="Oi, Keila! Vim pelo seu site e queria saber mais sobre o treino." target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- HERO -->
+<section class="hero" id="inicio" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="hero-tag" data-h><b>CREF 061099</b><span>Personal trainer · Coronel Fabriciano/MG</span></p>
+        <h1 class="name" id="h1"><span class="ln"><span>Keila</span></span><span class="ln"><span>Bernardo</span></span></h1>
+        <p class="hero-lede" data-h>Musculação com método, técnica e <em>gente do seu lado</em> em cada série.</p>
+        <p class="hero-sub" data-h>Treino montado pro seu corpo e pra sua rotina, com progressão planejada e acompanhamento de perto na Academia Via Prime, ou online.</p>
+        <div class="cta-row" data-h>
+          <!-- TROCAR NÚMERO (veja WA_NUMBER no script) -->
+          <a class="btn magnetic js-wa" href="https://wa.me/55XXXXXXXXXXX" data-wa="Oi, Keila! Vim pelo seu site e quero começar a treinar com você." target="_blank" rel="noopener">Quero treinar com a Keila <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn ghost magnetic" href="#ferramentas">Monte seu treino</a>
+        </div>
+      </div>
+      <div class="hero-photo" data-hp>
+        <figure class="ph">
+          <!-- TROCAR: coloque <img src="foto-keila.jpg" alt="Keila Bernardo treinando"> aqui dentro -->
+          <svg class="sil" aria-hidden="true"><use href="#sil"/></svg>
+          <figcaption>foto da Keila</figcaption>
+        </figure>
+        <div class="float-chip a" data-chip>Musculação <i>desde 2016</i><small>≈ 10 anos de treino</small></div>
+        <div class="float-chip b" data-chip>Academia Via Prime<small>Giovannini · Cel. Fabriciano</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-skew" id="mqSkew">
+    <div class="mq-track">
+      <div class="mq-group"><span>Força</span><i></i><span class="o">Técnica</span><i></i><span>Constância</span><i></i><span class="o">Método</span><i></i><span>Evolução</span><i></i><span class="o">Disciplina</span><i></i></div>
+      <div class="mq-group"><span>Força</span><i></i><span class="o">Técnica</span><i></i><span>Constância</span><i></i><span class="o">Método</span><i></i><span>Evolução</span><i></i><span class="o">Disciplina</span><i></i></div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS (apenas números reais) -->
+<div class="stats" role="list">
+  <div class="stat" role="listitem"><div class="n"><small>≈</small><span data-count="10">10</span></div><p>anos de treino de musculação</p></div>
+  <div class="stat" role="listitem"><div class="n"><span data-count="2016">2016</span></div><p>ano em que a Keila começou na musculação</p></div>
+  <div class="stat" role="listitem"><div class="n"><span data-count="2">2</span><small>×</small></div><p>por semana: fortalecimento muscular, segundo a OMS</p></div>
+  <div class="stat" role="listitem"><div class="n"><span data-count="150">150</span><small>–300</small></div><p>min/semana de atividade moderada, diretriz da OMS</p></div>
+</div>
+
+<!-- POR QUE -->
+<section class="why" id="por-que" aria-label="Por que ter um personal?">
+  <div class="why-pin">
+    <div class="wrap" style="padding-block:0">
+      <div class="why-head sec" style="padding-bottom:0">
+        <p class="eyebrow">Por que ter um personal?</p>
+        <h2 class="h2 reveal-title" id="h-why-m"><span class="ln"><span>Treinar sozinho</span></span><span class="ln"><span>dá pra <em>evoluir</em>.</span></span><span class="ln"><span>Com método, <em>rende</em>.</span></span></h2>
+      </div>
+    </div>
+    <div class="why-track" id="whyTrack" style="padding-inline:var(--gutter)">
+      <div class="why-intro">
+        <p class="eyebrow">Por que ter um personal?</p>
+        <h2 class="h2" id="h-why"><span class="ln"><span>Treinar sozinho</span></span><span class="ln"><span>dá pra <em>evoluir</em>.</span></span><span class="ln"><span>Com método, <em>rende</em>.</span></span></h2>
+        <p class="lead">Seis motivos concretos pra ter alguém que enxerga o seu treino de fora.</p>
+        <p class="why-hint"><svg aria-hidden="true"><use href="#i-drag"/></svg>Role para ver os motivos</p>
+      </div>
+      <article class="why-card"><span class="no" aria-hidden="true">01</span><h3>Técnica e prevenção de lesão</h3><p>Execução corrigida no momento em que o erro aparece, antes de virar vício ou dor. Postura, amplitude e respiração fazem diferença na carga que você aguenta e na articulação que você preserva.</p></article>
+      <article class="why-card"><span class="no" aria-hidden="true">02</span><h3>Progressão de carga planejada</h3><p>Aumentar peso no impulso é loteria. Aqui a carga, as repetições e o descanso sobem em etapas, com sobrecarga suficiente para o corpo responder sem estourar.</p></article>
+      <article class="why-card"><span class="no" aria-hidden="true">03</span><h3>Constância e cobrança</h3><p>Horário marcado, alguém esperando e alguém que repara quando você some. Treino que acontece toda semana vale mais que o treino perfeito que fica no papel.</p></article>
+      <article class="why-card"><span class="no" aria-hidden="true">04</span><h3>Feito pro seu corpo e rotina</h3><p>Seu objetivo, seu histórico, seus dias livres e suas limitações entram na conta. Nada de planilha genérica copiada da internet.</p></article>
+      <article class="why-card"><span class="no" aria-hidden="true">05</span><h3>Economia de tempo</h3><p>Sem perder meia hora decidindo o que fazer. Você chega, o treino já está pensado, e cada minuto na academia tem um propósito.</p></article>
+      <article class="why-card"><span class="no" aria-hidden="true">06</span><h3>Você sabe o porquê de cada exercício</h3><p>Cada movimento tem uma razão. Entender o que está treinando e por quê torna o treino mais consciente e deixa você autônomo para o futuro.</p></article>
+    </div>
+    <div class="why-progress" aria-hidden="true"><i id="whyBar"></i></div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sec" id="sobre" aria-labelledby="h-sobre">
+  <div class="wrap about-grid">
+    <div class="about-photo" data-reveal>
+      <figure class="ph">
+        <!-- TROCAR: <img src="keila-sobre.jpg" alt="Keila Bernardo, personal trainer"> -->
+        <svg class="sil" aria-hidden="true"><use href="#sil"/></svg>
+        <figcaption>foto da Keila</figcaption>
+      </figure>
+      <div class="seal" role="img" aria-label="Selo: CREF 061099, Educação Física">
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="98" fill="#FF6A1A"/>
+          <circle cx="100" cy="100" r="62" fill="none" stroke="#0E0E0F" stroke-width="2"/>
+          <defs><path id="circ" d="M100 100m-80 0a80 80 0 1 1 160 0a80 80 0 1 1-160 0"/></defs>
+          <g class="spin"><text font-family="Inter,sans-serif" font-weight="800" font-size="13" fill="#0E0E0F"><textPath href="#circ" textLength="494" lengthAdjust="spacing">EDUCAÇÃO FÍSICA • BACHAREL • PERSONAL TRAINER • </textPath></text></g>
+          <text x="100" y="94" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="26" fill="#0E0E0F" letter-spacing="2">CREF</text>
+          <text x="100" y="122" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="28" fill="#0E0E0F" letter-spacing="1">061099</text>
+        </svg>
+      </div>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">Sobre a Keila</p>
+      <h2 class="h2 reveal-title" id="h-sobre"><span class="ln"><span>Quem vai</span></span><span class="ln"><span>treinar <em>você</em></span></span></h2>
+      <p class="lead" style="margin-top:28px" data-reveal><strong>Keila Bernardo</strong> é bacharel em Educação Física e treina musculação desde 2016. Ou seja: além do diploma, são cerca de dez anos de ferro, de erro, de ajuste e de aprendizado na própria pele.</p>
+      <p class="lead" data-reveal>No Instagram ela se descreve como “um feed aleatório e desorganizado ✌🏻”. O treino dela, não: é com método, com critério e com muito amor pela musculação ♥️.</p>
+      <div class="facts" data-reveal>
+        <div class="fact"><b>CREF</b><span><strong>061099.</strong> Registro profissional ativo. É ele que garante que você treina com profissional habilitada.</span></div>
+        <div class="fact"><b>2016</b><span>Começou na <strong>musculação</strong>. Hoje são ≈ 10 anos de treino.</span></div>
+        <div class="fact"><b>VIA</b><span>Atende na <strong>Academia Via Prime</strong>, Rua Copacabana, 1475, Giovannini, Coronel Fabriciano/MG.</span></div>
+      </div>
+      <div class="hl" data-reveal>
+        <a href="https://www.instagram.com/keilabernardopersonal/" target="_blank" rel="noopener">Treinos</a>
+        <a href="https://www.instagram.com/keilabernardopersonal/" target="_blank" rel="noopener">Alunos</a>
+        <a href="https://www.instagram.com/keilabernardopersonal/" target="_blank" rel="noopener">Alunas</a>
+      </div>
+      <p style="margin-top:12px;color:var(--mut);font-size:14px" data-reveal>Treinos e resultados nos destaques do Instagram @keilabernardopersonal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="sec" id="como" aria-labelledby="h-como" style="background:var(--bg2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="steps-head">
+      <p class="eyebrow">Como funciona</p>
+      <h2 class="h2 reveal-title" id="h-como"><span class="ln"><span>Quatro passos.</span></span><span class="ln"><span>Nenhum <em>chute</em>.</span></span></h2>
+    </div>
+    <ol class="steps">
+      <li class="step" data-reveal><span class="sn" aria-hidden="true">01</span><h3>Avaliação</h3><p>Conversa sobre objetivo, histórico, rotina e qualquer limitação. É daqui que sai o ponto de partida real, não o ideal.</p></li>
+      <li class="step" data-reveal><span class="sn" aria-hidden="true">02</span><h3>Plano</h3><p>Divisão, exercícios, cargas e descansos montados para você, com a explicação do porquê de cada escolha.</p></li>
+      <li class="step" data-reveal><span class="sn" aria-hidden="true">03</span><h3>Treino acompanhado</h3><p>A Keila corrige a execução, ajusta a carga na hora e mantém você no ritmo certo em cada série.</p></li>
+      <li class="step" data-reveal><span class="sn" aria-hidden="true">04</span><h3>Reavaliação</h3><p>Hora de olhar o que evoluiu, o que travou e o que muda. O plano acompanha você, não o contrário.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section class="sec" id="planos" aria-labelledby="h-planos">
+  <div class="wrap">
+    <p class="eyebrow">Modalidades e planos</p>
+    <h2 class="h2 reveal-title" id="h-planos"><span class="ln"><span>Escolha como</span></span><span class="ln"><span>quer <em>treinar</em></span></span></h2>
+    <div class="plans">
+      <article class="plan hot" data-reveal>
+        <span class="tag">Presencial</span>
+        <h3>Na Academia Via Prime</h3>
+        <div class="price">R$ — <small>[valor a definir — substituir]</small></div>
+        <ul>
+          <li>Treino acompanhado pela Keila, em Giovannini, Coronel Fabriciano/MG</li>
+          <li>Correção de execução e ajuste de carga em tempo real</li>
+          <li>Plano individual, revisto a cada reavaliação</li>
+        </ul>
+        <p class="ph-note">[Frequência e condições — substituir]</p>
+        <a class="btn magnetic js-wa" href="https://wa.me/55XXXXXXXXXXX" data-wa="Oi, Keila! Tenho interesse no treino presencial na Via Prime. Como funciona?" target="_blank" rel="noopener">Quero o presencial <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="plan" data-reveal>
+        <span class="tag o">Online</span>
+        <h3>Consultoria online</h3>
+        <div class="price">R$ — <small>[valor a definir — substituir]</small></div>
+        <ul>
+          <li>Plano de treino individual, no seu nível e para a sua rotina</li>
+          <li>Treine onde for melhor para você, com orientação à distância</li>
+          <li>Reavaliações para ajustar o plano conforme você evolui</li>
+        </ul>
+        <p class="ph-note">[Formato do acompanhamento — substituir]</p>
+        <a class="btn ghost magnetic js-wa" href="https://wa.me/55XXXXXXXXXXX" data-wa="Oi, Keila! Tenho interesse na consultoria online. Como funciona?" target="_blank" rel="noopener">Quero a consultoria online <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FERRAMENTAS -->
+<section class="sec" id="ferramentas" aria-labelledby="h-tools" style="background:var(--bg2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="tools-head">
+      <p class="eyebrow">Ferramentas grátis</p>
+      <h2 class="h2 reveal-title" id="h-tools"><span class="ln"><span>Teste antes</span></span><span class="ln"><span>de <em>treinar</em></span></span></h2>
+      <p class="lead">Quatro ferramentas para já sair daqui com alguma coisa na mão: uma divisão de treino, um cronômetro de descanso, a proteína do dia e um mapa de exercícios por músculo.</p>
+    </div>
+
+    <div class="tools">
+      <!-- 01 planner -->
+      <div class="tool t1" data-reveal>
+        <div class="tool-h"><span class="tool-n">01</span><h3>Monte seu treino da semana</h3></div>
+        <fieldset class="opts"><legend>Seu objetivo</legend>
+          <div class="chips" id="objChips">
+            <label class="chip"><input type="radio" name="obj" value="hipertrofia" checked><span>Ganhar massa</span></label>
+            <label class="chip"><input type="radio" name="obj" value="emagrecimento"><span>Emagrecer</span></label>
+            <label class="chip"><input type="radio" name="obj" value="saude"><span>Saúde e condicionamento</span></label>
+            <label class="chip"><input type="radio" name="obj" value="forca"><span>Ficar mais forte</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="opts"><legend>Dias disponíveis por semana</legend>
+          <div class="chips" id="dayChips">
+            <label class="chip"><input type="radio" name="dias" value="2"><span>2</span></label>
+            <label class="chip"><input type="radio" name="dias" value="3" checked><span>3</span></label>
+            <label class="chip"><input type="radio" name="dias" value="4"><span>4</span></label>
+            <label class="chip"><input type="radio" name="dias" value="5"><span>5</span></label>
+            <label class="chip"><input type="radio" name="dias" value="6"><span>6</span></label>
+          </div>
+        </fieldset>
+        <div id="planOut" aria-live="polite"></div>
+        <a class="btn block magnetic" id="planWa" href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener">Quero que a Keila monte o meu de verdade <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <!-- 02 timer -->
+      <div class="tool t2" id="timerCard" data-reveal>
+        <div class="tool-h"><span class="tool-n">02</span><h3>Descanso entre séries</h3></div>
+        <div class="timer-stage">
+          <div class="ring" id="ring">
+            <svg viewBox="0 0 200 200" aria-hidden="true"><circle class="tr" cx="100" cy="100" r="88"/><circle class="pr" id="ringProg" cx="100" cy="100" r="88"/></svg>
+            <div class="read"><b id="tTime" role="timer" aria-label="Tempo restante">01:00</b><span id="tState">pronto</span></div>
+          </div>
+        </div>
+        <fieldset class="opts" style="margin-bottom:0"><legend>Tempo de descanso</legend>
+          <div class="chips" id="tChips">
+            <label class="chip"><input type="radio" name="tp" value="30"><span>30 s</span></label>
+            <label class="chip"><input type="radio" name="tp" value="60" checked><span>60 s</span></label>
+            <label class="chip"><input type="radio" name="tp" value="90"><span>90 s</span></label>
+            <label class="chip"><input type="radio" name="tp" value="120"><span>120 s</span></label>
+          </div>
+        </fieldset>
+        <div class="t-actions">
+          <button class="btn" id="tGo" type="button">Iniciar</button>
+          <button class="btn ghost" id="tReset" type="button">Zerar</button>
+        </div>
+        <div class="switches">
+          <label class="sw"><input type="checkbox" id="swSound"> Bipe ao final</label>
+          <label class="sw"><input type="checkbox" id="swVib"> Vibrar (celular)</label>
+        </div>
+        <p class="sr" id="tLive" aria-live="assertive"></p>
+      </div>
+
+      <!-- 03 proteína -->
+      <div class="tool t3" data-reveal>
+        <div class="tool-h"><span class="tool-n">03</span><h3>Proteína do dia</h3></div>
+        <div class="field"><label for="pKg">Seu peso</label><div class="num"><input id="pKg" type="number" inputmode="decimal" min="30" max="250" step="0.1" value="70"><span>kg</span></div></div>
+        <fieldset class="opts"><legend>Objetivo</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="pobj" value="manter" checked><span>Manter-se ativo</span></label>
+            <label class="chip"><input type="radio" name="pobj" value="massa"><span>Ganhar massa</span></label>
+            <label class="chip"><input type="radio" name="pobj" value="emagrecer"><span>Emagrecer</span></label>
+          </div>
+        </fieldset>
+        <div class="p-out" aria-live="polite">
+          <div class="p-big" id="pRange">—</div>
+          <p class="p-sub" id="pSub"></p>
+          <div class="p-bar" aria-hidden="true"><i id="pBar"></i></div>
+          <div class="p-scale" aria-hidden="true"><span>0</span><span>1,0</span><span>2,0</span><span>2,5 g/kg</span></div>
+        </div>
+        <p class="warn">Estimativa de referência. Não substitui a avaliação de um nutricionista, que considera sua saúde, exames e alimentação.</p>
+      </div>
+
+      <!-- 04 body map -->
+      <div class="tool t4" data-reveal>
+        <div class="tool-h"><span class="tool-n">04</span><h3>Mapa de exercícios por músculo</h3></div>
+        <div class="bm">
+          <div class="bm-fig">
+            <div class="seg" role="group" aria-label="Vista do corpo"><button type="button" id="vFront" aria-pressed="true">Frente</button><button type="button" id="vBack" aria-pressed="false">Costas</button></div>
+            <svg viewBox="0 0 200 420" role="group" aria-label="Mapa do corpo clicável">
+              <g id="figFront">
+                <circle class="base" cx="100" cy="36" r="19"/><rect class="base" x="92" y="52" width="16" height="16" rx="6"/>
+                <path class="base" d="M64 78Q100 66 136 78L130 192Q100 202 70 192Z"/>
+                <rect class="base" x="37" y="100" width="24" height="64" rx="12"/><rect class="base" x="139" y="100" width="24" height="64" rx="12"/>
+                <rect class="base" x="31" y="168" width="21" height="58" rx="10"/><rect class="base" x="148" y="168" width="21" height="58" rx="10"/>
+                <rect class="base" x="68" y="188" width="64" height="28" rx="14"/>
+                <rect class="base" x="69" y="212" width="30" height="104" rx="14"/><rect class="base" x="101" y="212" width="30" height="104" rx="14"/>
+                <rect class="base" x="72" y="318" width="25" height="86" rx="12"/><rect class="base" x="103" y="318" width="25" height="86" rx="12"/>
+                <g data-view="front">
+                  <circle class="z" data-m="ombros" tabindex="0" role="button" aria-label="Ombros" cx="56" cy="94" r="15"/><circle class="z" data-m="ombros" tabindex="0" role="button" aria-label="Ombros" cx="144" cy="94" r="15"/>
+                  <rect class="z" data-m="peito" tabindex="0" role="button" aria-label="Peito" x="70" y="82" width="29" height="36" rx="12"/><rect class="z" data-m="peito" tabindex="0" role="button" aria-label="Peito" x="101" y="82" width="29" height="36" rx="12"/>
+                  <rect class="z" data-m="abdomen" tabindex="0" role="button" aria-label="Abdômen" x="78" y="122" width="44" height="62" rx="12"/>
+                  <rect class="z" data-m="biceps" tabindex="0" role="button" aria-label="Bíceps" x="40" y="112" width="19" height="48" rx="9"/><rect class="z" data-m="biceps" tabindex="0" role="button" aria-label="Bíceps" x="141" y="112" width="19" height="48" rx="9"/>
+                  <rect class="z" data-m="quadriceps" tabindex="0" role="button" aria-label="Quadríceps" x="71" y="218" width="26" height="90" rx="12"/><rect class="z" data-m="quadriceps" tabindex="0" role="button" aria-label="Quadríceps" x="103" y="218" width="26" height="90" rx="12"/>
+                  <rect class="z" data-m="panturrilha" tabindex="0" role="button" aria-label="Panturrilha" x="74" y="324" width="21" height="72" rx="10"/><rect class="z" data-m="panturrilha" tabindex="0" role="button" aria-label="Panturrilha" x="105" y="324" width="21" height="72" rx="10"/>
+                </g>
+              </g>
+              <g id="figBack" hidden>
+                <circle class="base" cx="100" cy="36" r="19"/><rect class="base" x="92" y="52" width="16" height="16" rx="6"/>
+                <path class="base" d="M64 78Q100 66 136 78L130 192Q100 202 70 192Z"/>
+                <rect class="base" x="37" y="100" width="24" height="64" rx="12"/><rect class="base" x="139" y="100" width="24" height="64" rx="12"/>
+                <rect class="base" x="31" y="168" width="21" height="58" rx="10"/><rect class="base" x="148" y="168" width="21" height="58" rx="10"/>
+                <rect class="base" x="68" y="188" width="64" height="28" rx="14"/>
+                <rect class="base" x="69" y="212" width="30" height="104" rx="14"/><rect class="base" x="101" y="212" width="30" height="104" rx="14"/>
+                <rect class="base" x="72" y="318" width="25" height="86" rx="12"/><rect class="base" x="103" y="318" width="25" height="86" rx="12"/>
+                <g data-view="back">
+                  <circle class="z" data-m="ombros" tabindex="-1" role="button" aria-label="Ombros" cx="56" cy="94" r="15"/><circle class="z" data-m="ombros" tabindex="-1" role="button" aria-label="Ombros" cx="144" cy="94" r="15"/>
+                  <path class="z" data-m="costas" tabindex="-1" role="button" aria-label="Costas" d="M72 82Q100 74 128 82L125 150Q100 160 75 150Z"/>
+                  <rect class="z" data-m="triceps" tabindex="-1" role="button" aria-label="Tríceps" x="40" y="112" width="19" height="48" rx="9"/><rect class="z" data-m="triceps" tabindex="-1" role="button" aria-label="Tríceps" x="141" y="112" width="19" height="48" rx="9"/>
+                  <rect class="z" data-m="gluteos" tabindex="-1" role="button" aria-label="Glúteos" x="72" y="190" width="27" height="30" rx="14"/><rect class="z" data-m="gluteos" tabindex="-1" role="button" aria-label="Glúteos" x="101" y="190" width="27" height="30" rx="14"/>
+                  <rect class="z" data-m="posteriores" tabindex="-1" role="button" aria-label="Posterior de coxa" x="71" y="226" width="26" height="82" rx="12"/><rect class="z" data-m="posteriores" tabindex="-1" role="button" aria-label="Posterior de coxa" x="103" y="226" width="26" height="82" rx="12"/>
+                  <rect class="z" data-m="panturrilha" tabindex="-1" role="button" aria-label="Panturrilha" x="74" y="324" width="21" height="72" rx="10"/><rect class="z" data-m="panturrilha" tabindex="-1" role="button" aria-label="Panturrilha" x="105" y="324" width="21" height="72" rx="10"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="bm-info" aria-live="polite">
+            <div class="bm-chips" id="bmChips"></div>
+            <h4 id="bmT">Peito</h4>
+            <p class="s" id="bmS"></p>
+            <ul id="bmL"></ul>
+            <p class="warn">Lista de exemplos comuns. A escolha, a carga e a execução certas dependem de você, e é isso que a Keila define no seu plano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section class="sec" id="resultados" aria-labelledby="h-res">
+  <div class="wrap">
+    <div class="res-head">
+      <p class="eyebrow">Resultados</p>
+      <h2 class="h2 reveal-title" id="h-res"><span class="ln"><span>O treino aparece</span></span><span class="ln"><span>no <em>espelho</em></span></span></h2>
+      <p class="lead">Aqui entram os resultados de alunos e alunas, com autorização deles. Arraste o controle para comparar o antes e o depois.</p>
+    </div>
+    <div class="ba-grid">
+      <figure class="ba-fig" data-reveal>
+        <div class="ba" data-ba>
+          <div class="ba-l after"><div><span class="big">Depois</span><small>[Foto depois — substituir]</small></div></div>
+          <div class="ba-l before"><div><span class="big">Antes</span><small>[Foto antes — substituir]</small></div></div>
+          <span class="ba-tag l">Antes</span><span class="ba-tag r">Depois</span>
+          <div class="ba-line"></div><div class="ba-knob"><svg aria-hidden="true"><use href="#i-drag"/></svg></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois, resultado 1">
+        </div>
+        <figcaption><b>[Nome da aluna — substituir]</b> · [tempo de treino — substituir]</figcaption>
+      </figure>
+      <figure class="ba-fig" data-reveal>
+        <div class="ba" data-ba>
+          <div class="ba-l after"><div><span class="big">Depois</span><small>[Foto depois — substituir]</small></div></div>
+          <div class="ba-l before"><div><span class="big">Antes</span><small>[Foto antes — substituir]</small></div></div>
+          <span class="ba-tag l">Antes</span><span class="ba-tag r">Depois</span>
+          <div class="ba-line"></div><div class="ba-knob"><svg aria-hidden="true"><use href="#i-drag"/></svg></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois, resultado 2">
+        </div>
+        <figcaption><b>[Nome do aluno — substituir]</b> · [tempo de treino — substituir]</figcaption>
+      </figure>
+    </div>
+    <div class="testi">
+      <figure class="tcard" data-reveal><blockquote><p>[Depoimento de aluna — substituir]</p></blockquote><cite>[Nome e tempo de treino — substituir]</cite></figure>
+      <figure class="tcard" data-reveal><blockquote><p>[Depoimento de aluno — substituir]</p></blockquote><cite>[Nome e tempo de treino — substituir]</cite></figure>
+      <figure class="tcard" data-reveal><blockquote><p>[Depoimento de aluna — substituir]</p></blockquote><cite>[Nome e tempo de treino — substituir]</cite></figure>
+    </div>
+    <p class="res-note" data-reveal>Enquanto isso, os treinos e resultados reais estão nos destaques <strong>Treinos</strong>, <strong>Alunos</strong> e <strong>Alunas</strong> do <a href="https://www.instagram.com/keilabernardopersonal/" target="_blank" rel="noopener">Instagram da Keila</a>.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" aria-labelledby="h-faq" style="background:var(--bg2);border-block:1px solid var(--line)">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <p class="eyebrow">Dúvidas</p>
+      <h2 class="h2 reveal-title" id="h-faq"><span class="ln"><span>Perguntas</span></span><span class="ln"><span><em>frequentes</em></span></span></h2>
+      <p class="lead" style="margin-top:24px">Não achou a sua? Manda no WhatsApp que a Keila responde.</p>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fa1" id="fq1" type="button"><span>Nunca treinei. Posso começar com personal?</span><i aria-hidden="true"></i></button><div class="faq-a" id="fa1" role="region" aria-labelledby="fq1"><div><p>Pode, e é uma ótima forma de começar. O primeiro passo é a avaliação: objetivo, histórico, rotina e limitações. O treino parte do <strong>seu</strong> nível, sem pressa e sem comparação.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fa2" id="fq2" type="button"><span>Quantas vezes por semana eu preciso treinar?</span><i aria-hidden="true"></i></button><div class="faq-a" id="fa2" role="region" aria-labelledby="fq2"><div><p>A OMS recomenda entre <strong>150 e 300 minutos por semana</strong> de atividade moderada, somados a <strong>fortalecimento muscular em 2 dias</strong> da semana. O número ideal para você depende do objetivo e da rotina. A ferramenta “Monte seu treino” já dá um ponto de partida.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fa3" id="fq3" type="button"><span>Tenho lesão ou alguma condição de saúde. Posso treinar?</span><i aria-hidden="true"></i></button><div class="faq-a" id="fa3" role="region" aria-labelledby="fq3"><div><p>Conte tudo na avaliação. O treino é adaptado às suas limitações e, em caso de dor, doença ou dúvida, o ideal é ter a liberação do seu médico antes de começar.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fa4" id="fq4" type="button"><span>Onde acontecem os treinos presenciais?</span><i aria-hidden="true"></i></button><div class="faq-a" id="fa4" role="region" aria-labelledby="fq4"><div><p>Na <strong>Academia Via Prime</strong>, Rua Copacabana, 1475, Giovannini, Coronel Fabriciano/MG.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fa5" id="fq5" type="button"><span>Funciona treinar online?</span><i aria-hidden="true"></i></button><div class="faq-a" id="fa5" role="region" aria-labelledby="fq5"><div><p>Funciona quando o plano é individual e é acompanhado de verdade. Na consultoria online você recebe o treino montado para a sua rotina, com reavaliações para ajustar. <em>[Detalhes do acompanhamento — substituir]</em></p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fa6" id="fq6" type="button"><span>Quanto custa?</span><i aria-hidden="true"></i></button><div class="faq-a" id="fa6" role="region" aria-labelledby="fq6"><div><p>Valores: <strong>R$ —</strong> <em>[substituir]</em>. Chame a Keila no WhatsApp para saber as condições da modalidade que combina com você.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fa7" id="fq7" type="button"><span>A calculadora de proteína substitui um nutricionista?</span><i aria-hidden="true"></i></button><div class="faq-a" id="fa7" role="region" aria-labelledby="fq7"><div><p>Não. Ela dá uma estimativa de referência, em g/kg, para quem treina. Alimentação individual, exames e condições de saúde são com nutricionista.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="foot" id="contato">
+  <div class="wrap">
+    <p class="foot-cta reveal-title"><span class="ln"><span>Bora</span></span><span class="ln"><span><em>treinar?</em></span></span></p>
+    <a class="btn magnetic js-wa" href="https://wa.me/55XXXXXXXXXXX" data-wa="Oi, Keila! Vim pelo seu site e quero marcar uma avaliação." target="_blank" rel="noopener">Chamar a Keila no WhatsApp <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <div class="foot-cols">
+      <div>
+        <h4>Onde treinar</h4>
+        <address><strong>Academia Via Prime</strong>Rua Copacabana, 1475<br>Giovannini · Coronel Fabriciano/MG</address>
+        <a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=Academia%20Via%20Prime%20Rua%20Copacabana%201475%20Giovannini%20Coronel%20Fabriciano%20MG" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Ver no mapa</a>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <a class="lnk" href="https://www.instagram.com/keilabernardopersonal/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ig"/></svg>@keilabernardopersonal</a>
+      </div>
+      <div>
+        <h4>Registro profissional</h4>
+        <p style="color:var(--mut)">Keila Bernardo<br>Bacharel em Educação Física</p>
+        <span class="cref">CREF 061099</span>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© Keila Bernardo — Personal Trainer</span><span>Treino com método. Resultado com constância.</span></div>
+  </div>
+</footer>
+
+<!-- TROCAR NÚMERO -->
+<a class="wa-float js-wa" href="https://wa.me/55XXXXXXXXXXX" data-wa="Oi, Keila! Vim pelo seu site." target="_blank" rel="noopener" aria-label="Falar com a Keila no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+'use strict';
+/* ===== CONFIG ===== */
+const WA_NUMBER = '55XXXXXXXXXXX'; // TROCAR NÚMERO (55 + DDD + número, só dígitos)
+const waLink = msg => 'https://wa.me/' + WA_NUMBER + (msg ? '?text=' + encodeURIComponent(msg) : '');
+
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+const RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const HAS_GSAP = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
+const ANIM = HAS_GSAP && !RM;
+const safe = fn => { try { return fn(); } catch(e) { return null; } };
+
+/* ===== WhatsApp links ===== */
+$$('.js-wa').forEach(a => { a.href = waLink(a.dataset.wa || ''); });
+
+/* ===== NAV ===== */
+const nav = $('#nav'), menuBtn = $('#menuBtn'), navLinks = $('#navLinks');
+const onScroll = () => nav.classList.toggle('solid', window.scrollY > 20);
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+function setMenu(open){
+  menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  navLinks.classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+menuBtn.addEventListener('click', () => setMenu(menuBtn.getAttribute('aria-expanded') !== 'true'));
+navLinks.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && navLinks.classList.contains('open')) { setMenu(false); menuBtn.focus(); } });
+window.matchMedia('(min-width:1081px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
+// link ativo
+const secs = ['por-que','sobre','como','planos','ferramentas','resultados','faq'].map(id => document.getElementById(id));
+const links = new Map($$('.nav-links a[href^="#"]').map(a => [a.getAttribute('href').slice(1), a]));
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { links.forEach(a => a.classList.remove('on')); const l = links.get(e.target.id); if (l) l.classList.add('on'); }
+  }), {rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(s => s && io.observe(s));
+}
+
+/* ===== PLANNER ===== */
+const WEEK = ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+const SCHEDULE = {2:[0,3],3:[0,2,4],4:[0,1,3,4],5:[0,1,2,3,4],6:[0,1,2,3,4,5]};
+const OBJ = {
+  hipertrofia:{label:'Ganhar massa', rest:60, note:'Ponto de partida: volume progressivo, cerca de 8 a 12 repetições na maioria dos exercícios e descanso de 60 a 90 s.'},
+  emagrecimento:{label:'Emagrecer', rest:45, note:'Mantenha a musculação para preservar massa magra e some caminhada ou outra atividade aeróbica nos dias livres. Descansos mais curtos, de 30 a 60 s.'},
+  saude:{label:'Saúde e condicionamento', rest:60, note:'Base da OMS: 150 a 300 min/semana de atividade moderada e fortalecimento muscular em 2 dias. Qualquer divisão abaixo já cobre o fortalecimento.'},
+  forca:{label:'Ficar mais forte', rest:120, note:'Prioridade para exercícios compostos, poucas repetições (cerca de 3 a 6) e descansos longos, de 2 a 3 min.'}
+};
+const FB_A = ['Pernas','Peito','Costas','Core'];
+const FB_B = ['Posteriores','Glúteos','Ombros','Costas','Core'];
+const FB_C = ['Pernas','Ombros','Peito','Bíceps','Tríceps'];
+function getSplit(n, obj){
+  if (n === 2) return {name:'Full Body A/B', days:[['A','Full Body A',FB_A],['B','Full Body B',FB_B]]};
+  if (n === 3) {
+    if (obj === 'hipertrofia' || obj === 'forca') return {name:'ABC', days:[['A','Peito · Ombros · Tríceps',['Peito','Ombros','Tríceps']],['B','Costas · Bíceps',['Costas','Bíceps','Core']],['C','Pernas · Glúteos',['Quadríceps','Posteriores','Glúteos','Panturrilha']]]};
+    return {name:'Full Body ×3', days:[['A','Full Body A',FB_A],['B','Full Body B',FB_B],['C','Full Body C',FB_C]]};
+  }
+  if (n === 4) return {name:'Upper / Lower', days:[['U1','Upper A',['Peito','Costas','Ombros','Braços']],['L1','Lower A',['Quadríceps','Posteriores','Panturrilha','Core']],['U2','Upper B',['Costas','Peito','Ombros','Braços']],['L2','Lower B',['Glúteos','Posteriores','Quadríceps','Core']]]};
+  if (n === 5) return {name:'ABCDE', days:[['A','Peito · Tríceps',['Peito','Tríceps','Ombros']],['B','Costas · Bíceps',['Costas','Bíceps']],['C','Pernas',['Quadríceps','Posteriores','Panturrilha']],['D','Ombros · Core',['Ombros','Trapézio','Core']],['E','Glúteos · Posteriores',['Glúteos','Posteriores','Core']]]};
+  return {name:'Push / Pull / Legs ×2', days:[['PS','Push',['Peito','Ombros','Tríceps']],['PL','Pull',['Costas','Bíceps','Ombro posterior']],['LG','Legs',['Quadríceps','Posteriores','Glúteos','Panturrilha']],['PS','Push',['Peito','Ombros','Tríceps']],['PL','Pull',['Costas','Bíceps','Ombro posterior']],['LG','Legs',['Quadríceps','Posteriores','Glúteos','Panturrilha']]]};
+}
+const planOut = $('#planOut'), planWa = $('#planWa');
+let firstPlan = true;
+function renderPlan(){
+  const obj = $('input[name=obj]:checked').value, n = +$('input[name=dias]:checked').value;
+  const sp = getSplit(n, obj), o = OBJ[obj], sched = SCHEDULE[n];
+  const wk = WEEK.map((d,i) => { const k = sched.indexOf(i); return `<div class="wd${k>-1?' on':''}"><small>${d}</small><b>${k>-1?sp.days[k][0]:''}</b></div>`; }).join('');
+  const days = sp.days.map((d,i) => `<div class="day"><b>${d[0]}</b><h4>${WEEK[sched[i]]} · ${d[1]}</h4><div class="tags">${d[2].map(t=>`<span>${t}</span>`).join('')}</div></div>`).join('');
+  planOut.innerHTML = `<div class="split-name">Sua divisão: <em>${sp.name}</em></div><div class="week" aria-label="Semana de treino">${wk}</div><div class="days">${days}</div><p class="note">${o.note} <span style="opacity:.75">É um ponto de partida: a divisão final depende da sua avaliação.</span></p><button class="rest-link" type="button" data-rest="${o.rest}">Descanso sugerido: <b>${o.rest} s</b> · usar no timer</button>`;
+  const msg = `Oi, Keila! Vi o seu site e quero que você monte o meu treino de verdade.\n\nObjetivo: ${o.label}\nDias por semana: ${n}\nDivisão que apareceu pra mim: ${sp.name}\n\nPode me explicar como funciona?`;
+  planWa.href = waLink(msg);
+  if (ANIM && !firstPlan) gsap.from(planOut.querySelectorAll('.split-name,.wd,.day,.note,.rest-link'), {y:16, opacity:0, duration:.45, stagger:.04, ease:'power3.out', clearProps:'all'});
+  firstPlan = false;
+}
+$$('input[name=obj],input[name=dias]').forEach(i => i.addEventListener('change', renderPlan));
+planOut.addEventListener('click', e => { const b = e.target.closest('[data-rest]'); if (b) { setPreset(+b.dataset.rest, true); } });
+
+/* ===== TIMER ===== */
+const ring = $('#ring'), prog = $('#ringProg'), tTime = $('#tTime'), tState = $('#tState'), tGo = $('#tGo'), tReset = $('#tReset');
+const swSound = $('#swSound'), swVib = $('#swVib'), tLive = $('#tLive');
+const CIRC = 2 * Math.PI * 88;
+prog.style.strokeDasharray = CIRC;
+let total = 60, remain = 60, running = false, endAt = 0, raf = 0, backup = 0, audio = null;
+const fmt = s => { const m = Math.floor(s / 60), r = s % 60; return String(m).padStart(2,'0') + ':' + String(r).padStart(2,'0'); };
+function drawTimer(){
+  tTime.textContent = fmt(Math.ceil(remain - 1e-6));
+  prog.style.strokeDashoffset = CIRC * (1 - remain / total);
+}
+function tick(){
+  remain = Math.max(0, (endAt - performance.now()) / 1000);
+  drawTimer();
+  if (remain <= 0) finish(); else raf = requestAnimationFrame(tick);
+}
+function beep(){
+  try {
+    if (!audio) return;
+    [0, .28, .56].forEach((d, i) => {
+      const t = audio.currentTime + d, o = audio.createOscillator(), g = audio.createGain();
+      o.type = 'sine'; o.frequency.value = i === 2 ? 1175 : 880;
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(.35, t + .02); g.gain.exponentialRampToValueAtTime(.0001, t + .22);
+      o.connect(g).connect(audio.destination); o.start(t); o.stop(t + .25);
+    });
+  } catch(e){}
+}
+function finish(){
+  running = false; cancelAnimationFrame(raf); clearTimeout(backup);
+  remain = 0; drawTimer();
+  ring.classList.add('done'); tState.textContent = 'bora pra próxima'; tGo.textContent = 'Iniciar';
+  tLive.textContent = 'Descanso terminado. Próxima série.';
+  if (swSound.checked) beep();
+  if (swVib.checked && navigator.vibrate) safe(() => navigator.vibrate([220, 110, 220, 110, 380]));
+}
+function start(){
+  if (remain <= 0) remain = total;
+  ring.classList.remove('done'); tLive.textContent = '';
+  if (swSound.checked) { try { audio = audio || new (window.AudioContext || window.webkitAudioContext)(); audio.resume && audio.resume(); } catch(e){} }
+  running = true; endAt = performance.now() + remain * 1000;
+  tState.textContent = 'descansando'; tGo.textContent = 'Pausar';
+  cancelAnimationFrame(raf); raf = requestAnimationFrame(tick);
+  clearTimeout(backup); backup = setTimeout(() => { if (running) tick(); }, remain * 1000 + 60);
+}
+function pause(){
+  running = false; cancelAnimationFrame(raf); clearTimeout(backup);
+  remain = Math.max(0, (endAt - performance.now()) / 1000); drawTimer();
+  tState.textContent = 'pausado'; tGo.textContent = 'Retomar';
+}
+function resetTimer(){
+  running = false; cancelAnimationFrame(raf); clearTimeout(backup);
+  remain = total; ring.classList.remove('done'); drawTimer(); tState.textContent = 'pronto'; tGo.textContent = 'Iniciar'; tLive.textContent = '';
+}
+function setPreset(sec, flash){
+  total = sec; const r = $(`input[name=tp][value="${sec}"]`);
+  if (r) r.checked = true;
+  resetTimer();
+  if (flash) { const c = $('#timerCard'); c.scrollIntoView({behavior: RM ? 'auto' : 'smooth', block:'center'}); if (ANIM) gsap.fromTo(c, {boxShadow:'0 0 0 3px #FF6A1A'}, {boxShadow:'0 0 0 0px rgba(255,106,26,0)', duration:1.2}); }
+}
+tGo.addEventListener('click', () => running ? pause() : start());
+tReset.addEventListener('click', resetTimer);
+$$('input[name=tp]').forEach(r => r.addEventListener('change', () => { total = +r.value; resetTimer(); }));
+swVib.addEventListener('change', () => { if (swVib.checked && navigator.vibrate) safe(() => navigator.vibrate(60)); });
+swSound.addEventListener('change', () => {
+  if (swSound.checked) { try { audio = audio || new (window.AudioContext || window.webkitAudioContext)(); audio.resume && audio.resume(); beep(); } catch(e){} }
+});
+if (!navigator.vibrate) { swVib.parentElement.title = 'Vibração costuma funcionar só em celulares compatíveis'; }
+drawTimer();
+
+/* ===== PROTEÍNA ===== */
+const PROT = {
+  manter:{lo:1.2, hi:1.6, txt:'para se manter ativo e saudável treinando'},
+  massa:{lo:1.6, hi:2.2, txt:'para apoiar o ganho de massa muscular'},
+  emagrecer:{lo:1.8, hi:2.4, txt:'para preservar massa magra durante o emagrecimento'}
+};
+const pKg = $('#pKg'), pRange = $('#pRange'), pSub = $('#pSub'), pBar = $('#pBar');
+let pShown = {lo:0, hi:0};
+function pTween(lo, hi){
+  const from = {...pShown}; pShown = {lo, hi};
+  const draw = (a, b) => { pRange.innerHTML = `${Math.round(a)}–${Math.round(b)} <small>g por dia</small>`; };
+  if (!ANIM) { draw(lo, hi); return; }
+  gsap.to(from, {lo, hi, duration:.6, ease:'power2.out', onUpdate:() => draw(from.lo, from.hi)});
+}
+function renderProt(){
+  const kg = parseFloat(String(pKg.value).replace(',', '.'));
+  const o = PROT[$('input[name=pobj]:checked').value];
+  if (!(kg >= 30 && kg <= 250)) { pRange.innerHTML = '— <small>informe um peso entre 30 e 250 kg</small>'; pSub.textContent = ''; pBar.style.width = '0'; pShown = {lo:0, hi:0}; return; }
+  const lo = kg * o.lo, hi = kg * o.hi, meal = Math.round((lo + hi) / 2 / 4);
+  pTween(lo, hi);
+  pSub.textContent = `${String(o.lo).replace('.', ',')} a ${String(o.hi).replace('.', ',')} g por kg, ${o.txt}. Dividido em 4 refeições, dá cerca de ${meal} g em cada uma.`;
+  pBar.style.left = (o.lo / 2.5 * 100) + '%'; pBar.style.width = ((o.hi - o.lo) / 2.5 * 100) + '%';
+}
+pKg.addEventListener('input', renderProt);
+$$('input[name=pobj]').forEach(i => i.addEventListener('change', renderProt));
+
+/* ===== MAPA CORPORAL ===== */
+const MUS = {
+  peito:{n:'Peito', s:'Empurrar para a frente e para cima.', ex:['Supino reto com barra ou halteres','Supino inclinado com halteres','Crucifixo na máquina','Flexão de braço']},
+  ombros:{n:'Ombros', s:'Estabilizam o braço e dão forma ao tronco.', ex:['Desenvolvimento com halteres','Elevação lateral','Elevação frontal','Remada alta']},
+  biceps:{n:'Bíceps', s:'Flexão do cotovelo, na frente do braço.', ex:['Rosca direta','Rosca alternada','Rosca martelo','Rosca scott']},
+  abdomen:{n:'Abdômen', s:'Estabilidade do tronco e proteção da coluna.', ex:['Prancha','Abdominal na polia','Elevação de pernas','Abdominal crunch']},
+  quadriceps:{n:'Quadríceps', s:'Frente da coxa: extensão do joelho.', ex:['Agachamento','Leg press','Cadeira extensora','Afundo']},
+  panturrilha:{n:'Panturrilha', s:'Base de apoio para caminhar, correr e saltar.', ex:['Panturrilha em pé','Panturrilha sentada','Panturrilha no leg press']},
+  costas:{n:'Costas', s:'Puxar, sustentar a postura e proteger a coluna.', ex:['Puxada frontal','Remada baixa','Remada curvada','Remada unilateral']},
+  triceps:{n:'Tríceps', s:'Extensão do cotovelo, atrás do braço.', ex:['Tríceps na polia (corda)','Tríceps testa','Mergulho no banco','Tríceps francês']},
+  gluteos:{n:'Glúteos', s:'Potência do quadril, da subida de escada ao agachamento.', ex:['Elevação pélvica','Agachamento sumô','Abdução na máquina','Passada']},
+  posteriores:{n:'Posterior de coxa', s:'Parte de trás da coxa: flexão do joelho e extensão do quadril.', ex:['Stiff','Mesa flexora','Cadeira flexora','Levantamento terra romeno']}
+};
+const FRONT = ['peito','ombros','biceps','abdomen','quadriceps','panturrilha'];
+const BACK = ['costas','ombros','triceps','gluteos','posteriores','panturrilha'];
+let view = 'front', cur = 'peito';
+const bmT = $('#bmT'), bmS = $('#bmS'), bmL = $('#bmL'), bmChips = $('#bmChips');
+function bmRender(animate){
+  const m = MUS[cur];
+  bmT.textContent = m.n; bmS.textContent = m.s;
+  bmL.innerHTML = m.ex.map(x => `<li>${x}</li>`).join('');
+  $$('.bm .z').forEach(z => { const on = z.dataset.m === cur; z.classList.toggle('on', on); z.setAttribute('aria-pressed', String(on)); });
+  $$('#bmChips button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.m === cur)));
+  if (animate && ANIM) gsap.from([bmT, bmS, ...bmL.children], {y:12, opacity:0, duration:.35, stagger:.04, ease:'power2.out', clearProps:'all'});
+}
+function bmChipsRender(){
+  const ids = view === 'front' ? FRONT : BACK;
+  bmChips.innerHTML = ids.map(id => `<button type="button" data-m="${id}" aria-pressed="${id===cur}">${MUS[id].n}</button>`).join('');
+}
+function setView(v){
+  view = v;
+  $('#figFront').toggleAttribute('hidden', v !== 'front'); $('#figBack').toggleAttribute('hidden', v !== 'back');
+  $('#vFront').setAttribute('aria-pressed', String(v === 'front')); $('#vBack').setAttribute('aria-pressed', String(v === 'back'));
+  $$('#figFront .z').forEach(z => z.tabIndex = v === 'front' ? 0 : -1);
+  $$('#figBack .z').forEach(z => z.tabIndex = v === 'back' ? 0 : -1);
+  const ids = v === 'front' ? FRONT : BACK;
+  if (!ids.includes(cur)) cur = ids[0];
+  bmChipsRender(); bmRender(true);
+}
+$('#vFront').addEventListener('click', () => setView('front'));
+$('#vBack').addEventListener('click', () => setView('back'));
+$('.bm svg').addEventListener('click', e => { const z = e.target.closest('.z'); if (z) { cur = z.dataset.m; bmRender(true); } });
+$('.bm svg').addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('z')) { e.preventDefault(); cur = e.target.dataset.m; bmRender(true); } });
+bmChips.addEventListener('click', e => { const b = e.target.closest('button'); if (b) { cur = b.dataset.m; bmRender(true); } });
+
+/* ===== ANTES / DEPOIS ===== */
+$$('[data-ba]').forEach(el => {
+  const inp = $('input', el);
+  const set = () => el.style.setProperty('--pos', inp.value + '%');
+  inp.addEventListener('input', set); set();
+});
+
+/* ===== FAQ ===== */
+$$('.faq-q').forEach(q => q.addEventListener('click', () => {
+  const open = q.getAttribute('aria-expanded') === 'true';
+  q.setAttribute('aria-expanded', String(!open));
+  document.getElementById(q.getAttribute('aria-controls')).classList.toggle('open', !open);
+}));
+
+/* ===== INIT das ferramentas ===== */
+renderPlan(); renderProt(); bmChipsRender(); bmRender(false);
+// estado inicial do mapa: marca zonas visíveis
+setView('front');
+
+/* ===== MOTION ===== */
+function countTo(el, instant){
+  const to = +el.dataset.count;
+  if (instant || !ANIM) { el.textContent = to; return; }
+  const o = {v:0};
+  gsap.to(o, {v:to, duration: to > 1000 ? 1.8 : 1.4, ease:'power3.out', onUpdate:() => { el.textContent = Math.round(o.v); }, onComplete:() => { el.textContent = to; }});
+}
+if (!ANIM) {
+  $$('[data-count]').forEach(el => countTo(el, true));
+} else {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // hero
+  const tl = gsap.timeline({defaults:{ease:'power4.out'}});
+  tl.from('h1.name .ln > span', {yPercent:115, skewY:9, duration:1.1, stagger:.12})
+    .from('[data-h]', {y:28, opacity:0, duration:.8, stagger:.1}, '-=.6')
+    .from('[data-hp]', {clipPath:'inset(100% 0 0 0)', duration:1.2, ease:'power4.inOut'}, 0.15)
+    .from('[data-chip]', {scale:.7, opacity:0, duration:.6, stagger:.12, ease:'back.out(2)'}, '-=.4');
+  gsap.to('[data-hp] .ph', {yPercent:-6, ease:'none', scrollTrigger:{trigger:'#inicio', start:'top top', end:'bottom top', scrub:true}});
+
+  // títulos
+  $$('.reveal-title').forEach(t => {
+    if (t.closest('.why-head') && document.documentElement.clientWidth >= 900) return;
+    gsap.from($$('.ln > span', t), {yPercent:115, skewY:8, duration:1, stagger:.12, ease:'power4.out', scrollTrigger:{trigger:t, start:'top 88%', once:true}});
+  });
+
+  // reveals genéricos
+  const rv = $$('[data-reveal]');
+  gsap.set(rv, {opacity:0, y:44});
+  ScrollTrigger.batch(rv, {start:'top 92%', once:true, onEnter: b => gsap.to(b, {opacity:1, y:0, duration:.85, stagger:.12, ease:'power3.out', overwrite:true})});
+
+  // contadores
+  $$('.stat').forEach(s => {
+    const c = $('[data-count]', s); c.textContent = '0';
+    ScrollTrigger.create({trigger:s, start:'top 90%', once:true, onEnter:() => countTo(c)});
+  });
+  gsap.from('.stat', {y:30, opacity:0, duration:.8, stagger:.1, ease:'power3.out', scrollTrigger:{trigger:'.stats', start:'top 88%', once:true}});
+
+  // marquee reage à velocidade do scroll
+  const skewSet = gsap.quickTo('#mqSkew', 'skewX', {duration:.5, ease:'power3.out'});
+  ScrollTrigger.create({onUpdate: self => skewSet(gsap.utils.clamp(-8, 8, self.getVelocity() / -350))});
+  gsap.from('.marquee', {opacity:0, duration:.8, scrollTrigger:{trigger:'.marquee', start:'top 95%', once:true}});
+
+  // selo
+  gsap.from('.seal', {scale:.4, rotate:-90, opacity:0, duration:1.1, ease:'back.out(1.6)', scrollTrigger:{trigger:'.seal', start:'top 88%', once:true}});
+
+  // passos: linha de baixo
+  // POR QUE: pin + scroll horizontal (desktop)
+  const mm = gsap.matchMedia();
+  mm.add('(min-width: 900px)', () => {
+    const sec = $('#por-que'), track = $('#whyTrack'), bar = $('#whyBar');
+    sec.classList.add('is-h');
+    const dist = () => Math.max(0, track.scrollWidth - document.documentElement.clientWidth);
+    const t = gsap.timeline({scrollTrigger:{trigger:sec, start:'top top', end:() => '+=' + (dist() + 200), pin:true, scrub:.8, anticipatePin:1, invalidateOnRefresh:true}});
+    t.to(track, {x:() => -dist(), ease:'none'}, 0).to(bar, {scaleX:1, ease:'none'}, 0);
+    gsap.from('.why-intro .ln > span', {yPercent:115, skewY:8, duration:1, stagger:.12, ease:'power4.out', scrollTrigger:{trigger:sec, start:'top 70%', once:true}});
+    $$('.why-card').forEach(c => {
+      gsap.from(c, {opacity:0, y:60, rotate:2, ease:'none', scrollTrigger:{trigger:c, containerAnimation:t, start:'left 98%', end:'left 70%', scrub:true}});
+    });
+    return () => { sec.classList.remove('is-h'); gsap.set(track, {clearProps:'all'}); track.style.paddingInline = 'var(--gutter)'; };
+  });
+  mm.add('(max-width: 899px)', () => {
+    gsap.set('.why-card', {opacity:0, y:40});
+    ScrollTrigger.batch('.why-card', {start:'top 92%', once:true, onEnter: b => gsap.to(b, {opacity:1, y:0, duration:.7, stagger:.1, ease:'power3.out', overwrite:true})});
+  });
+
+  // botões magnéticos
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    $$('.magnetic').forEach(b => {
+      const xs = gsap.quickTo(b, 'x', {duration:.5, ease:'elastic.out(1,.5)'}), ys = gsap.quickTo(b, 'y', {duration:.5, ease:'elastic.out(1,.5)'});
+      b.addEventListener('pointermove', e => { const r = b.getBoundingClientRect(); xs((e.clientX - (r.left + r.width / 2)) * .28); ys((e.clientY - (r.top + r.height / 2)) * .4); });
+      b.addEventListener('pointerleave', () => { xs(0); ys(0); });
+    });
+  }
+
+  window.addEventListener('load', () => ScrollTrigger.refresh());
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => ScrollTrigger.refresh());
+}
+})();
+</script>
+</body>
+</html>
